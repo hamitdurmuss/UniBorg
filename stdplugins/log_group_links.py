@@ -17,7 +17,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 global NO_PM_LOG_USERS
 NO_PM_LOG_USERS = []
-PM_LINKS =  -1001170353133
+PM_LINKS = -1001170353133
 
 @borg.on(events.NewMessage(incoming=True, func=lambda e: e.is_group ))
 async def monito_p_m_s(event):
