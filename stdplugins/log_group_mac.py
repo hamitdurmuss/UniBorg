@@ -34,7 +34,7 @@ async def monito_p_m_s(event):
         if chat.id not in NO_PM_LOG_USERS and chat.id != borg.uid:
             try:
                 if link_detect:
-                    e = await client.get_input_entity(Config.PM_LOGGR_BOT_API_ID)
+                    e = await borg.get_entity(Config.PM_LOGGR_BOT_API_ID)
                     # print(event.message.media)
                     fwd_message = await borg.forward_messages(
                         e,
